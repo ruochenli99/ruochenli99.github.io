@@ -2,223 +2,302 @@
 <html lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="author" content="Ruochen Li">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Ruochen Li is a PhD student at TUM working on agentic coding, clinical LLM/VLM evaluation, surgical planning, and multimodal medical AI.">
 
     <title>Ruochen Li</title>
 
-    <meta name="author" content="Ruochen Li">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    
   </head>
 
   <body>
-    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-      <tr style="padding:0px">
-        <td style="padding:0px">
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr style="padding:0px">
-              <td style="padding:2.5%;width:63%;vertical-align:middle">
-                <p class="name" style="text-align: center;">
-                  Ruochen Li
-                </p>
-                <p>
-		I am a PhD student at <a href="https://www.cs.cit.tum.de/camp/research/robust-robotics-and-ultrasound/">RobUSt (Robotics and Ultrasound Team)</a>, 
-<a href="https://www.tum.de/">Technical University of Munich</a>, supervised by 
-<a href="https://www.professoren.tum.de/en/navab-nassir">Prof. Nassir Navab</a> and mentored by 
-<a href="https://www.cs.cit.tum.de/camp/members/yuan-bi/">Dr. Yuan Bi</a>. 
-I completed my M.Sc. in Computer Science at TUM (GPA: 1.5/1.0, Distinction) before starting my PhD.</p>
-				<p>
-My research focuses on <strong>agentic coding, LLM-based planning as the "brain" for robots, and multimodal learning</strong>.
-				</p>
+    <main class="page">
+      <header class="topbar">
+        <a class="brand" href="#top">Ruochen Li</a>
+        <nav class="nav" aria-label="Primary navigation">
+          <a href="#news">News</a>
+          <a href="#research">Research</a>
+          <a href="#publications">Publications</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
 
-<p>
-  My previous work bridges language and vision: building clinician-validated benchmarks 
-  for radiology report evaluation (X-ray), post-training LLMs (SFT/DPO&nbsp;+&nbsp;LoRA) 
-  for fine-grained clinical alignment, rethinking surgical planning evaluation 
-  for Video-LLMs, and analyzing attention mechanisms in long-context models. 
-  On the vision side, I have worked with MRI and CT/CTA across segmentation, 
-  registration, and clinical outcome prediction.
-</p>
+      <section class="hero" id="top">
+        <div class="hero-copy">
+          <p class="eyebrow">PhD student, Technical University of Munich</p>
+          <h1>Ruochen Li</h1>
+          <p class="lead">
+            I work on <strong>reliable clinical evaluation, LLM-based planning for VLA and agentic coding, and multimodal medical AI</strong>.
+            My research asks how better evaluation can shape better models, especially when clinical judgment and real-world constraints matter.
+          </p>
+          <p>
+            I am a PhD student at
+            <a href="https://www.cs.cit.tum.de/camp/research/robust-robotics-and-ultrasound/">RobUSt (Robotics and Ultrasound Team)</a>,
+            <a href="https://www.tum.de/">Technical University of Munich</a>, supervised by
+            <a href="https://www.professoren.tum.de/en/navab-nassir">Prof. Nassir Navab</a> and mentored by
+            <a href="https://www.cs.cit.tum.de/camp/members/yuan-bi/">Dr. Yuan Bi</a>.
+            I completed my M.Sc. in Computer Science at TUM with distinction.
+          </p>
+          <div class="link-row" aria-label="Profile links">
+            <a href="mailto:liruochen8@gmail.com">Email</a>
+            <a href="data/CV_RuochenLi.pdf">CV</a>
+            <a href="https://scholar.google.com/citations?user=g8BpHfAAAAAJ">Scholar</a>
+            <a href="https://github.com/ruochenli99/">GitHub</a>
+          </div>
+        </div>
+        <a class="portrait-link" href="images/Ruochen.png" aria-label="Open profile photo">
+          <img class="portrait" alt="Ruochen Li profile photo" src="images/Ruochen.png">
+        </a>
+      </section>
 
+      <section class="section focus-section" aria-labelledby="focus-title">
+        <div class="section-heading">
+          <p class="eyebrow">Current focus</p>
+          <h2 id="focus-title">What I am thinking about now</h2>
+        </div>
+        <div class="focus-grid">
+          <article class="mini-card">
+            <h3>LLM planning for VLA</h3>
+            <p>Thinking about how LLM agents can plan, code, and act as the decision layer for vision-language-action systems.</p>
+          </article>
+          <article class="mini-card">
+            <h3>Reliable clinical evaluation</h3>
+            <p>Building clinician-aligned evaluation signals that can expose model failures and guide better medical generation models.</p>
+          </article>
+          <article class="mini-card">
+            <h3>Multimodal medical AI</h3>
+            <p>Learning useful representations from language, CT/CTA, MRI, and raw medical signals that humans cannot easily inspect.</p>
+          </article>
+        </div>
+      </section>
 
+      <section class="section news-section" id="news" aria-labelledby="news-title">
+        <div class="section-heading">
+          <p class="eyebrow">Recent news</p>
+          <h2 id="news-title">Updates</h2>
+        </div>
+        <ol class="news-list">
+          <li>
+            <time datetime="2026-07">Jul 2026</time>
+            <span class="tag">PhD</span>
+            <p>Joined <a href="https://www.cs.cit.tum.de/camp/">CAMP</a> at TUM and started my PhD.</p>
+          </li>
+          <li>
+            <time datetime="2026">2026</time>
+            <span class="tag">Collab</span>
+            <p>Developing agentic metrics for medical generated report evaluation with clinical alignment, in collaboration with <a href="https://scholar.google.com/citations?user=eqlyHDsAAAAJ&amp;hl=fr">Jean-Philippe Corbeil</a> at Microsoft Healthcare.</p>
+          </li>
+          <li>
+            <time datetime="2025-11">Nov 2025</time>
+            <span class="tag">Paper</span>
+            <p><a href="https://aclanthology.org/2025.emnlp-main.598.pdf">ReEvalMed</a> accepted to EMNLP 2025 Main.</p>
+          </li>
+          <li>
+            <time datetime="2026-06">Jun 2026</time>
+            <span class="tag">Preprint</span>
+            <p><a href="https://arxiv.org/pdf/2606.18797">Beyond Scalar Scores</a> released for LLM-based clinical significance evaluation.</p>
+          </li>
+          <li>
+            <time datetime="2025">2025</time>
+            <span class="tag">Service</span>
+            <p>Reviewer for IEEE Transactions on Medical Imaging and volunteer at EMNLP 2025.</p>
+          </li>
+        </ol>
+      </section>
 
-                
-                <p style="text-align:center">
-                  <a href="mailto:liruochen8@gmail.com">Email</a> &nbsp;/&nbsp;
-                  <a href="data/CV_RuochenLi.pdf">CV</a> &nbsp;/&nbsp;
-                  <a href="https://scholar.google.com/citations?user=g8BpHfAAAAAJ">Scholar</a> &nbsp;/&nbsp;
-                  <a href="https://github.com/ruochenli99/">Github</a>
-                </p>
-              </td>
-              <td style="padding:2.5%;width:37%;max-width:37%">
-<a href="images/Ruochen.png"><img style="width:100%;max-width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:50%;" alt="profile photo" src="images/Ruochen.png" class="hoverZoomLink"></a>              </td>
-            </tr>
-          </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-              <tr>
-              <td style="padding:16px;width:100%;vertical-align:middle">
-                <h2>Research</h2>
+      <section class="section" id="research" aria-labelledby="research-title">
+        <div class="section-heading">
+          <p class="eyebrow">Research taste</p>
+          <h2 id="research-title">A thread through the work</h2>
+        </div>
+        <div class="thread-grid">
+          <article class="thread-card">
+            <span class="thread-number">01</span>
+            <h3>Reliable eval -> better models</h3>
+            <p>I see evaluation as more than a leaderboard. When metrics reflect clinical judgment, they become useful training signals that pull models toward safer and more meaningful behavior.</p>
+          </article>
+          <article class="thread-card">
+            <span class="thread-number">02</span>
+            <h3>Make model behavior legible</h3>
+            <p>I care about opening the black box: understanding where models attend, why they fail, and how structural knowledge can make their decisions easier to audit.</p>
+          </article>
+          <article class="thread-card">
+            <span class="thread-number">03</span>
+            <h3>Let AI read what humans cannot</h3>
+            <p>From cardiac MRI k-space to CT radiomics, I like using AI to mine raw medical data for signals that are present but hard for humans to directly interpret.</p>
+          </article>
+        </div>
+      </section>
 
-              </td>
-            </tr>
-          </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-<!-- ReEvalMed - EMNLP 2025 highlighted -->
-<tr bgcolor="#ffffd0">
-  <td style="padding:16px;width:20%;vertical-align:middle">
-    <img src='images/reevalmed.jpg' width="160">
-  </td>
-  <td style="padding:8px;width:80%;vertical-align:middle">
-    <a href="https://aclanthology.org/2025.emnlp-main.598.pdf">
-      <span class="papertitle">ReEvalMed: Rethinking Medical Report Evaluation by Aligning Metrics with Real-World Clinical Judgment</span>
-    </a>
-    <br>
-    <strong>Ruochen Li*</strong>, Jun Li*, Bailiang Jian, Kun Yuan, Youxiang Zhu
-    <br>
-    <em>EMNLP 2025 Main </em>
-    <br>
-    <a href="https://aclanthology.org/2025.emnlp-main.598.pdf">paper</a>
-    <p>A clinician-validated meta-evaluation benchmark for radiology report metrics, revealing clinical misinterpretations and score-inflating practices in widely-used metrics.</p>
-  </td>
-</tr>
+      <section class="section publications-section" id="publications" aria-labelledby="publications-title">
+        <div class="section-heading">
+          <p class="eyebrow">Selected work</p>
+          <h2 id="publications-title">Publications and projects</h2>
+        </div>
 
-<!-- Beyond Scalar Scores -->
-<tr>
-  <td style="padding:16px;width:20%;vertical-align:middle">
-    <img src='images/metric.png' width="160">
-  </td>
-  <td style="padding:8px;width:80%;vertical-align:middle">
-	<a href="https://arxiv.org/pdf/2606.18797">
-    <span class="papertitle">Beyond Scalar Scores: Exploring LLM-based Metrics for Clinical Significance Evaluation in Radiology Reports</span>
-    </a>
-	<br>
-    Qingyu Lu*, <strong>Ruochen Li*</strong>, ..., Dacheng Tao
-    <br>
-    <em>Under review, EMNLP 2026</em>
-    <br>
-    <p>Post-trained Qwen-8B and MedGemma-4B with SFT/DPO + LoRA, outperforming 32B medical LLMs on clinical alignment. Benchmarked LLM evaluators revealing discrimination bias and robustness failures.</p>
-  </td>
-</tr>
+        <div class="publication-list">
+          <article class="publication featured">
+            <a class="publication-media" href="https://aclanthology.org/2025.emnlp-main.598.pdf">
+              <img src="images/reevalmed.jpg" alt="ReEvalMed overview">
+            </a>
+            <div class="publication-body">
+              <div class="publication-meta">
+                <span class="venue">EMNLP 2025 Main</span>
+                <span class="status">Featured</span>
+              </div>
+              <h3><a href="https://aclanthology.org/2025.emnlp-main.598.pdf">ReEvalMed: Rethinking Medical Report Evaluation by Aligning Metrics with Real-World Clinical Judgment</a></h3>
+              <p class="authors"><strong>Ruochen Li*</strong>, Jun Li*, Bailiang Jian, Kun Yuan, Youxiang Zhu</p>
+              <p>A clinician-validated meta-evaluation benchmark for radiology report metrics, revealing clinical misinterpretations and score-inflating practices in widely used metrics.</p>
+              <p class="paper-links"><a href="https://aclanthology.org/2025.emnlp-main.598.pdf">paper</a></p>
+            </div>
+          </article>
 
-<!-- SurgGoal -->
-<tr>
-  <td style="padding:16px;width:20%;vertical-align:middle">
-    <img src='images/surgical.png' width="160">
-  </td>
-  <td style="padding:8px;width:80%;vertical-align:middle">
-    <a href="https://arxiv.org/pdf/2601.10455">
-      <span class="papertitle">SurgGoal: Rethinking Surgical Planning Evaluation via Goal-Satisfiability</span>
-    </a>
-    <br>
-    <strong>Ruochen Li*</strong>, Kun Yuan*, ..., Nassir Navab
-    <br>
-    <em>Under review, EMNLP 2026</em>
-    <br>
-    <a href="https://arxiv.org/pdf/2601.10455">arXiv</a>
-    <p>Proposed a paradigm shift from sequence similarity to safety-critical goal-satisfiability for surgical planning evaluation; diagnosed Video-LLM perception failures; structural (vs. semantic) knowledge better constrains surgical planning.</p>
-  </td>
-</tr>
+          <article class="publication">
+            <a class="publication-media" href="https://arxiv.org/pdf/2606.18797">
+              <img src="images/metric.png" alt="LLM-based metric overview">
+            </a>
+            <div class="publication-body">
+              <div class="publication-meta">
+                <span class="venue">Under review</span>
+              </div>
+              <h3><a href="https://arxiv.org/pdf/2606.18797">Beyond Scalar Scores: Exploring LLM-based Metrics for Clinical Significance Evaluation in Radiology Reports</a></h3>
+              <p class="authors">Qingyu Lu*, <strong>Ruochen Li*</strong>, ..., Dacheng Tao</p>
+              <p>Post-trained Qwen-8B and MedGemma-4B with SFT/DPO + LoRA, outperforming 32B medical LLMs on clinical alignment while exposing evaluator bias and robustness failures.</p>
+              <p class="paper-links"><a href="https://arxiv.org/pdf/2606.18797">arXiv</a></p>
+            </div>
+          </article>
 
-<!-- Focus Directions -->
-<tr>
-  <td style="padding:16px;width:20%;vertical-align:middle">
-    <img src='images/focus.png' width="160">
-  </td>
-  <td style="padding:8px;width:80%;vertical-align:middle">
-    <a href="https://arxiv.org/pdf/2503.23306">
-      <span class="papertitle">Focus Directions Make Your Language Models Pay More Attention to Relevant Contexts</span>
-    </a>
-    <br>
-    Youxiang Zhu, <strong>Ruochen Li</strong>, Danqing Wang, Daniel Haehn, Xiaohui Liang
-    <br>
-    <em>Under review, EMNLP 2026</em>
-    <br>
-    <a href="https://arxiv.org/pdf/2503.23306">arXiv</a>
-    <p>Training-free focus directions in key/query activations steer LLM attention toward task-relevant context, mitigating distraction across multiple LLM families.</p>
-  </td>
-</tr>
+          <article class="publication quiet">
+            <div class="publication-media">
+              <img src="images/surgical.png" alt="Surgical planning evaluation overview">
+            </div>
+            <div class="publication-body">
+              <div class="publication-meta">
+                <span class="venue">Under review</span>
+              </div>
+              <h3>Surgical Planning Evaluation for Video-LLMs</h3>
+              <p class="authors"><strong>Ruochen Li*</strong>, Kun Yuan*, ..., Nassir Navab</p>
+              <p>Studies how to evaluate long-horizon surgical planning in safety-critical settings, separating visual grounding failures from planning failures and examining how structural knowledge helps constrain model behavior.</p>
+            </div>
+          </article>
 
-<!-- k-Space MICCAI -->
-<tr>
-  <td style="padding:16px;width:20%;vertical-align:middle">
-    <img src='images/kspace.png' width="160">
-  </td>
-  <td style="padding:8px;width:80%;vertical-align:middle">
-    <a href="https://link.springer.com/chapter/10.1007/978-3-031-73284-3_4">
-      <span class="papertitle">Classification, Regression and Segmentation directly from k-Space in Cardiac MRI</span>
-    </a>
-    <br>
-    <strong>Ruochen Li*</strong>, Jiazhen Pan*, ..., Daniel Rueckert
-    <br>
-    <em>MICCAI Workshop</em>
-    <br>
-    <a href="https://link.springer.com/chapter/10.1007/978-3-031-73284-3_4">paper</a>
-    <p>Derived representation from UK Biobank k-space using Masked Autoencoders for classification/regression/segmentation; enabled robust prediction from undersampled, human-unreadable k-space data, competitive with image-input methods</p>
-  </td>
-</tr>
-<!-- Hepatic Steatosis - Frontiers in Nutrition -->
-<tr>
-  <td style="padding:16px;width:20%;vertical-align:middle">
-    <img src='images/nutri.png' width="160">
-  </td>
-  <td style="padding:8px;width:80%;vertical-align:middle">
-    <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12909248/">
-      <span class="papertitle">Multimodal CT Radiomics–Clinical Model for Hepatic Steatosis Risk Prediction with Metabolomic Interpretation</span>
-    </a>
-    <br>
-    Yufei Xia, <strong>Ruochen Li</strong>, ..., Xinying Wang
-    <br>
-    <em>Frontiers in Nutrition</em>
-    <br>
-    <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12909248/">paper</a>
-    <p>A multimodal model combining CT radiomics and clinical features for NAFLD risk prediction, with metabolomics used to interpret risk-associated imaging differences.</p>
-  </td>
-</tr>
+          <article class="publication">
+            <a class="publication-media" href="https://arxiv.org/pdf/2503.23306">
+              <img src="images/focus.png" alt="Focus Directions overview">
+            </a>
+            <div class="publication-body">
+              <div class="publication-meta">
+                <span class="venue">Under review</span>
+              </div>
+              <h3><a href="https://arxiv.org/pdf/2503.23306">Focus Directions Make Your Language Models Pay More Attention to Relevant Contexts</a></h3>
+              <p class="authors">Youxiang Zhu, <strong>Ruochen Li</strong>, Danqing Wang, Daniel Haehn, Xiaohui Liang</p>
+              <p>Training-free focus directions in key/query activations steer LLM attention toward task-relevant context, mitigating distraction across multiple LLM families.</p>
+              <p class="paper-links"><a href="https://arxiv.org/pdf/2503.23306">arXiv</a></p>
+            </div>
+          </article>
 
-<!-- Cascade Attention - Neural Networks -->
-<tr>
-  <td style="padding:16px;width:20%;vertical-align:middle">
-    <img src='images/seg.jpg' width="160">
-  </td>
-  <td style="padding:8px;width:80%;vertical-align:middle">
-    <a href="https://www.sciencedirect.com/science/article/pii/S0893608019303314">
-      <span class="papertitle">Learning Cascade Attention for Fine-Grained Image Classification</span>
-    </a>
-    <br>
-    Youxiang Zhu, <strong>Ruochen Li</strong>, Yin Yang, Ning Ye
-    <br>
-    <em>Neural Networks</em>
-    <br>
-    <a href="https://www.sciencedirect.com/science/article/pii/S0893608019303314">paper</a>
-    <p>A fully weakly supervised parallel CNN architecture with spatial and cross-network attention mechanisms for fine-grained visual recognition.</p>
-  </td>
-</tr>
+          <article class="publication">
+            <a class="publication-media" href="https://link.springer.com/chapter/10.1007/978-3-031-73284-3_4">
+              <img src="images/kspace.png" alt="Cardiac MRI k-space representation learning">
+            </a>
+            <div class="publication-body">
+              <div class="publication-meta">
+                <span class="venue">MICCAI Workshop</span>
+              </div>
+              <h3><a href="https://link.springer.com/chapter/10.1007/978-3-031-73284-3_4">Classification, Regression and Segmentation directly from k-Space in Cardiac MRI</a></h3>
+              <p class="authors"><strong>Ruochen Li*</strong>, Jiazhen Pan*, ..., Daniel Rueckert</p>
+              <p>Derived representations from UK Biobank k-space using masked autoencoders, enabling robust prediction from undersampled, human-unreadable frequency-domain data.</p>
+              <p class="paper-links"><a href="https://link.springer.com/chapter/10.1007/978-3-031-73284-3_4">paper</a></p>
+            </div>
+          </article>
 
-<!-- Longitudinal Brain MRI - IEEE TMI -->
-<tr>
-  <td style="padding:16px;width:20%;vertical-align:middle">
-    <img src='images/mri.png' width="160">
-  </td>
-  <td style="padding:8px;width:80%;vertical-align:middle">
-    <a href="https://ieeexplore.ieee.org/abstract/document/11437527">
-      <span class="papertitle">Temporal Conditioning for Longitudinal Brain MRI Registration and Aging Analysis</span>
-    </a>
-    <br>
-    Bailiang Jian, ..., <strong>Ruochen Li</strong>, Daniel Rueckert, Benedikt Wiestler, Christian Wachinger
-    <br>
-    <em>IEEE Transactions on Medical Imaging</em>
-    <br>
-    <a href="https://ieeexplore.ieee.org/abstract/document/11437527">paper</a>
-    <p>A learning-based framework for sparse-scan longitudinal brain MRI registration and brain-state forecasting across aging trajectories.</p>
-  </td>
-</tr>
+          <article class="publication">
+            <a class="publication-media" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12909248/">
+              <img src="images/nutri.png" alt="CT radiomics clinical model overview">
+            </a>
+            <div class="publication-body">
+              <div class="publication-meta">
+                <span class="venue">Frontiers in Nutrition</span>
+              </div>
+              <h3><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12909248/">Multimodal CT Radiomics-Clinical Model for Hepatic Steatosis Risk Prediction with Metabolomic Interpretation</a></h3>
+              <p class="authors">Yufei Xia, <strong>Ruochen Li</strong>, ..., Xinying Wang</p>
+              <p>A multimodal model combining CT radiomics and clinical features for hepatic steatosis risk prediction, with metabolomics used to interpret imaging differences.</p>
+              <p class="paper-links"><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12909248/">paper</a></p>
+            </div>
+          </article>
 
-            
-          </tbody></table>
+          <article class="publication">
+            <a class="publication-media" href="https://www.sciencedirect.com/science/article/pii/S0893608019303314">
+              <img src="images/seg.jpg" alt="Cascade attention visual recognition overview">
+            </a>
+            <div class="publication-body">
+              <div class="publication-meta">
+                <span class="venue">Neural Networks</span>
+              </div>
+              <h3><a href="https://www.sciencedirect.com/science/article/pii/S0893608019303314">Learning Cascade Attention for Fine-Grained Image Classification</a></h3>
+              <p class="authors">Youxiang Zhu, <strong>Ruochen Li</strong>, Yin Yang, Ning Ye</p>
+              <p>A weakly supervised parallel CNN architecture with spatial and cross-network attention mechanisms for fine-grained visual recognition.</p>
+              <p class="paper-links"><a href="https://www.sciencedirect.com/science/article/pii/S0893608019303314">paper</a></p>
+            </div>
+          </article>
 
-        </td>
-      </tr>
-    </table>
+          <article class="publication">
+            <a class="publication-media" href="https://ieeexplore.ieee.org/abstract/document/11437527">
+              <img src="images/mri.png" alt="Longitudinal brain MRI registration overview">
+            </a>
+            <div class="publication-body">
+              <div class="publication-meta">
+                <span class="venue">IEEE TMI</span>
+              </div>
+              <h3><a href="https://ieeexplore.ieee.org/abstract/document/11437527">Temporal Conditioning for Longitudinal Brain MRI Registration and Aging Analysis</a></h3>
+              <p class="authors">Bailiang Jian, ..., <strong>Ruochen Li</strong>, Daniel Rueckert, Benedikt Wiestler, Christian Wachinger</p>
+              <p>A learning-based framework for sparse-scan longitudinal brain MRI registration and brain-state forecasting across aging trajectories.</p>
+              <p class="paper-links"><a href="https://ieeexplore.ieee.org/abstract/document/11437527">paper</a></p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section two-column" aria-labelledby="service-title">
+        <div>
+          <div class="section-heading compact">
+            <p class="eyebrow">Service</p>
+            <h2 id="service-title">Academic service</h2>
+          </div>
+          <ul class="plain-list">
+            <li>Reviewer, IEEE Transactions on Medical Imaging</li>
+            <li>Reviewer, EMA4MICCAI 2025 Workshop</li>
+            <li>Volunteer, EMNLP 2025</li>
+          </ul>
+        </div>
+        <aside class="also-me">
+          <p class="eyebrow">Also me</p>
+          <h2>Beyond research</h2>
+          <p>
+            Before debugging medical AI systems, I was a torchbearer for the Nanjing Asian Youth Games
+            and a choir member at the Nanjing Youth Olympic Games opening ceremony.
+          </p>
+        </aside>
+      </section>
+
+      <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="section-heading compact">
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">Get in touch</h2>
+        </div>
+        <p>
+          I am happy to talk about reliable clinical evaluation, agentic coding, VLA planning,
+          and multimodal medical AI.
+        </p>
+        <div class="link-row" aria-label="Contact links">
+          <a href="mailto:liruochen8@gmail.com">Email</a>
+          <a href="data/CV_RuochenLi.pdf">CV</a>
+          <a href="https://scholar.google.com/citations?user=g8BpHfAAAAAJ">Scholar</a>
+          <a href="https://github.com/ruochenli99/">GitHub</a>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
