@@ -4,7 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="author" content="Ruochen Li">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Ruochen Li is a PhD student at TUM working on agentic coding, clinical LLM/VLM evaluation, surgical planning, and multimodal medical AI.">
+    <meta name="description" content="Ruochen Li is a PhD student at TUM developing vision-language understanding and planning for medical robotics, with a focus on ultrasound scanning and surgery.">
 
     <title>Ruochen Li</title>
 
@@ -17,22 +17,26 @@
       <header class="topbar">
         <a class="brand" href="#top">Ruochen Li</a>
         <nav class="nav" aria-label="Primary navigation">
-          <a href="#news">News</a>
           <a href="#research">Research</a>
-          <a href="#publications">Publications</a>
+          <a href="#applications">Applications</a>
+          <a href="#news">News</a>
+          <a href="#publications">Work</a>
           <a href="#contact">Contact</a>
         </nav>
       </header>
 
       <section class="hero" id="top">
         <div class="hero-copy">
-          <p class="eyebrow">PhD student, Technical University of Munich</p>
+          <p class="eyebrow">PhD student &middot; RobUSt, CAMP &middot; TUM</p>
           <h1>Ruochen Li</h1>
+          <p class="hero-statement">Building the VLM brain for medical robots.</p>
           <p class="lead">
-            I work on <strong>reliable clinical evaluation, LLM-based planning for VLA and agentic coding, and multimodal medical AI</strong>.
-            My research asks how better evaluation can shape better models, especially when clinical judgment and real-world constraints matter.
+            I develop vision-language models as the <strong>intelligent brain</strong> of medical robots. My research asks how VLMs can build genuine understanding from multimodal observations and use that understanding as the foundation for planning adaptive robot actions.
           </p>
-          <p>
+          <p class="hero-context">
+            I apply these ideas to medical ultrasound, from robotic scanning to ultrasound-guided interventions and surgery. An interactive AI avatar embodies this intelligence: it communicates with clinicians and patients while connecting the VLM's understanding and plans to robot execution.
+          </p>
+          <p class="affiliation">
             I am a PhD student at
             <a href="https://www.cs.cit.tum.de/camp/research/robust-robotics-and-ultrasound/">RobUSt (Robotics and Ultrasound Team)</a>,
             <a href="https://www.tum.de/">Technical University of Munich</a>, supervised by
@@ -45,31 +49,109 @@
             <a href="data/CV_RuochenLi.pdf">CV</a>
             <a href="https://scholar.google.com/citations?user=g8BpHfAAAAAJ">Scholar</a>
             <a href="https://github.com/ruochenli99/">GitHub</a>
-            <a href="www.linkedin.com/in/ruochenli99">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/ruochenli99">LinkedIn</a>
           </div>
         </div>
-        <a class="portrait-link" href="images/Ruochen.png" aria-label="Open profile photo">
-          <img class="portrait" alt="Ruochen Li profile photo" src="images/Ruochen.png">
-        </a>
+        <div class="portrait-wrap">
+          <a class="portrait-link" href="images/Ruochen.png" aria-label="Open profile photo">
+            <img class="portrait" alt="Ruochen Li profile photo" src="images/Ruochen.png">
+          </a>
+        </div>
       </section>
 
-      <section class="section focus-section" aria-labelledby="focus-title">
+      <section class="section research-section" id="research" aria-labelledby="research-title">
         <div class="section-heading">
-          <p class="eyebrow">Current focus</p>
-          <h2 id="focus-title">What I am thinking about now</h2>
+          <p class="eyebrow">Research direction</p>
+          <h2 id="research-title">The intelligence layer for medical robots</h2>
+          <p class="section-intro">The VLM sits between multimodal observations and robotic skills. It first builds a grounded understanding of what it observes; that understanding then becomes the basis for planning what the robot should do next.</p>
         </div>
-        <div class="focus-grid">
-          <article class="mini-card">
-            <h3>LLM planning for VLA</h3>
-            <p>Thinking about how VLM agents can plan, code, and act as the decision layer for vision-language-action systems.</p>
+        <div class="intelligence-map" role="img" aria-label="Medical observations flow into an intelligent VLM brain, where understanding forms the foundation for planning, and then into robot execution. An AI avatar connects clinicians and patients with the robot's execution.">
+          <div class="map-stage input-stage">
+            <p class="map-kicker">Multimodal input</p>
+            <h3>Observe</h3>
+            <ul>
+              <li>Ultrasound image &amp; video</li>
+              <li>Robot &amp; probe state</li>
+              <li>Patient and clinical context</li>
+            </ul>
+          </div>
+
+          <span class="map-arrow" aria-hidden="true">&rarr;</span>
+
+          <div class="brain-stage">
+            <p class="map-kicker">Intelligent VLM brain</p>
+            <div class="brain-process">
+              <div class="brain-step understanding-step">
+                <span>01 &middot; Understand first</span>
+                <h3>Build genuine understanding</h3>
+                <p>Form a multimodal state from perception, anatomy, context, and evidence</p>
+              </div>
+              <span class="process-connector" aria-hidden="true"></span>
+              <div class="brain-step planning-step">
+                <span>02 &middot; Then plan</span>
+                <h3>Plan from understanding</h3>
+                <p>Use that state to select robot skills, act, and replan from feedback</p>
+              </div>
+            </div>
+            <p class="brain-principle">Good planning begins with genuine understanding.</p>
+          </div>
+
+          <span class="map-arrow" aria-hidden="true">&rarr;</span>
+
+          <div class="map-stage action-stage">
+            <p class="map-kicker">Robot skills</p>
+            <h3>Act</h3>
+            <ul>
+              <li>Scan and navigate</li>
+              <li>Guide and intervene</li>
+              <li>Monitor and adapt</li>
+            </ul>
+          </div>
+
+          <div class="avatar-bridge">
+            <span class="human-node">Clinician &amp; patient</span>
+            <span class="bridge-arrow" aria-hidden="true">&harr;</span>
+            <strong>Interactive AI avatar</strong>
+            <span class="bridge-arrow" aria-hidden="true">&harr;</span>
+            <span class="human-node">Robot execution</span>
+          </div>
+        </div>
+
+        <div class="reliability-band">
+          <p class="capability-label">Cross-cutting foundation</p>
+          <h3>Grounding, reliability, and evaluation</h3>
+          <p>My earlier work on clinician-aligned evaluation informs a central question in this research: does the VLM genuinely understand what it observes, and can that understanding support effective planning in medical settings?</p>
+        </div>
+      </section>
+
+      <section class="section applications-section" id="applications" aria-labelledby="applications-title">
+        <div class="section-heading">
+          <p class="eyebrow">Medical ultrasound</p>
+          <h2 id="applications-title">One intelligence layer, two settings</h2>
+          <p class="section-intro">Ultrasound makes understanding and planning inseparable: what the robot sees depends on how it moves, and every new observation can change the next action.</p>
+        </div>
+        <div class="applications-grid">
+          <article class="application-card">
+            <div class="application-topline">
+              <span>01</span>
+              <p>Scanning</p>
+            </div>
+            <h3>Robotic ultrasound scanning</h3>
+            <p>VLMs can connect live ultrasound observations with probe state and scanning goals, allowing a robotic system to adapt its actions as visual evidence changes.</p>
+            <div class="application-path" aria-label="Scanning research flow">
+              <span>observe</span><i aria-hidden="true"></i><span>understand</span><i aria-hidden="true"></i><span>adapt</span>
+            </div>
           </article>
-          <article class="mini-card">
-            <h3>Reliable clinical evaluation</h3>
-            <p>Building clinician-aligned evaluation signals that can expose model failures and guide better medical generation models.</p>
-          </article>
-          <article class="mini-card">
-            <h3>Multimodal medical AI</h3>
-            <p>Learning useful representations from report, WSI, CT/CTA, MRI, and raw medical signals that humans cannot easily inspect.</p>
+          <article class="application-card surgery-card">
+            <div class="application-topline">
+              <span>02</span>
+              <p>Surgery</p>
+            </div>
+            <h3>Ultrasound-guided intervention and surgery</h3>
+            <p>In dynamic surgical settings, VLMs can combine imaging, context, and robot capabilities to support spatial reasoning, planning, and human coordination.</p>
+            <div class="application-path" aria-label="Surgical research flow">
+              <span>perceive</span><i aria-hidden="true"></i><span>plan</span><i aria-hidden="true"></i><span>coordinate</span>
+            </div>
           </article>
         </div>
       </section>
@@ -88,7 +170,7 @@
           <li>
             <time datetime="2026-07">2026</time>
             <span class="tag">PhD</span>
-            <p>Joined <a href="https://www.cs.cit.tum.de/camp/">CAMP</a> at TUM and started my PhD.</p>
+            <p>Joined the <a href="https://www.cs.cit.tum.de/camp/research/robust-robotics-and-ultrasound/">RobUSt team</a> at CAMP, TUM, to work on intelligent VLMs for medical robotics.</p>
           </li>
           <li>
             <time datetime="2026">2026</time>
@@ -108,34 +190,11 @@
         </ol>
       </section>
 
-      <section class="section" id="research" aria-labelledby="research-title">
-        <div class="section-heading">
-          <p class="eyebrow">Research taste</p>
-          <h2 id="research-title">A thread through the work</h2>
-        </div>
-        <div class="thread-grid">
-          <article class="thread-card">
-            <span class="thread-number">01</span>
-            <h3>Reliable eval -> better models</h3>
-            <p>I see evaluation as more than a leaderboard. When metrics reflect clinical judgment, they become useful training signals that pull models toward safer and more meaningful behavior.</p>
-          </article>
-          <article class="thread-card">
-            <span class="thread-number">02</span>
-            <h3>Make model behavior legible</h3>
-            <p>I care about opening the black box: understanding where models attend, why they fail, and how structural knowledge can make their decisions easier to audit.</p>
-          </article>
-          <article class="thread-card">
-            <span class="thread-number">03</span>
-            <h3>Let AI read what humans cannot</h3>
-            <p>From cardiac MRI k-space to CT radiomics, I like using AI to mine raw medical data for signals that are present but hard for humans to directly interpret.</p>
-          </article>
-        </div>
-      </section>
-
       <section class="section publications-section" id="publications" aria-labelledby="publications-title">
         <div class="section-heading">
           <p class="eyebrow">Selected work</p>
-          <h2 id="publications-title">Publications and projects</h2>
+          <h2 id="publications-title">Research foundations and projects</h2>
+          <p class="section-intro">My work on clinical alignment, model attention, medical representations, and planning shapes how I approach reliable VLM understanding and action today.</p>
         </div>
 
         <div class="publication-list">
@@ -290,7 +349,7 @@
           <h2 id="contact-title">Get in touch</h2>
         </div>
         <p>
-          I am happy to have coffe chat.
+          I am always happy to have a coffee chat about medical AI, robotics, or possible collaborations.
         </p>
         <div class="link-row" aria-label="Contact links">
           <a href="mailto:liruochen8@gmail.com">Email</a>
