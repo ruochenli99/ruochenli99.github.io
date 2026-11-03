@@ -4,7 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="author" content="Ruochen Li">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Ruochen Li is a PhD student at TUM developing vision-language understanding and planning for medical robotics, with a focus on ultrasound scanning and surgery.">
+    <meta name="description" content="Ruochen Li is a PhD student at TUM developing multimodal LLM understanding and planning for medical robotics, with a focus on ultrasound scanning and surgery.">
 
     <title>Ruochen Li</title>
 
@@ -27,21 +27,18 @@
 
       <section class="hero" id="top">
         <div class="hero-copy">
-          <p class="eyebrow">PhD student &middot; RobUSt, CAMP &middot; TUM</p>
+          <p class="eyebrow">PhD student &middot; CAMP &middot; TUM</p>
           <h1>Ruochen Li</h1>
-          <p class="hero-statement">Building the VLM brain for medical robots.</p>
+          <p class="hero-statement">Building MLLM as the brain of medical robots.</p>
           <p class="lead">
-            I develop vision-language models as the <strong>intelligent brain</strong> of medical robots. My research asks how VLMs can build genuine understanding from multimodal observations and use that understanding as the foundation for planning adaptive robot actions.
-          </p>
-          <p class="hero-context">
-            I apply these ideas to medical ultrasound, from robotic scanning to ultrasound-guided interventions and surgery. An interactive AI avatar embodies this intelligence: it communicates with clinicians and patients while connecting the VLM's understanding and plans to robot execution.
+            I develop multimodal large language models (MLLMs) as the <strong>intelligent brain</strong> of medical robots. My research asks how MLLMs can build genuine understanding from multimodal observations and use that understanding as the foundation for planning adaptive robot actions.
           </p>
           <p class="affiliation">
             I am a PhD student at
-            <a href="https://www.cs.cit.tum.de/camp/research/robust-robotics-and-ultrasound/">RobUSt (Robotics and Ultrasound Team)</a>,
+            <a href="https://www.cs.cit.tum.de/camp/start/">CAMP</a> at the
             <a href="https://www.tum.de/">Technical University of Munich</a>, supervised by
-            <a href="https://www.professoren.tum.de/en/navab-nassir">Prof. Nassir Navab</a> and
-            <a href="https://eng.ox.ac.uk/people/alison-noble">Prof. Alison Noble</a>, and mentored by
+            <a href="https://www.professoren.tum.de/en/navab-nassir">Prof. Nassir Navab</a> at TUM and
+            <a href="https://eng.ox.ac.uk/people/alison-noble">Prof. Alison Noble</a> at the University of Oxford, and mentored by
             <a href="https://www.cs.cit.tum.de/camp/members/yuan-bi/">Dr. Yuan Bi</a>.
             My PhD is supported through the
             <a href="https://www.ias.tum.de/ias/programs/fellowship-programs/hans-fischer-senior-fellowship/">Hans Fischer Senior Fellowship</a>
@@ -64,99 +61,59 @@
       </section>
 
       <section class="section research-section" id="research" aria-labelledby="research-title">
-        <div class="section-heading">
+        <div class="section-heading research-heading">
           <p class="eyebrow">Research direction</p>
-          <h2 id="research-title">The intelligence layer for medical robots</h2>
-          <p class="section-intro">The VLM sits between multimodal observations and robotic skills. It first builds a grounded understanding of what it observes; that understanding then becomes the basis for planning what the robot should do next.</p>
+          <h2 id="research-title">A robot should understand before it acts.</h2>
+          <p class="section-intro">I build MLLM brains that turn multimodal clinical evidence into adaptive plans for medical robots.</p>
         </div>
-        <div class="intelligence-map" role="img" aria-label="Medical observations flow into an intelligent VLM brain, where understanding forms the foundation for planning, and then into robot execution. An AI avatar connects clinicians and patients with the robot's execution.">
-          <div class="map-stage input-stage">
-            <p class="map-kicker">Multimodal input</p>
-            <h3>Observe</h3>
-            <ul>
-              <li>Ultrasound image &amp; video</li>
-              <li>Robot &amp; probe state</li>
-              <li>Patient and clinical context</li>
-            </ul>
-          </div>
-
-          <span class="map-arrow" aria-hidden="true">&rarr;</span>
-
-          <div class="brain-stage">
-            <p class="map-kicker">Intelligent VLM brain</p>
-            <div class="brain-process">
-              <div class="brain-step understanding-step">
-                <span>01 &middot; Understand first</span>
-                <h3>Build genuine understanding</h3>
-                <p>Form a multimodal state from perception, anatomy, context, and evidence</p>
-              </div>
-              <span class="process-connector" aria-hidden="true"></span>
-              <div class="brain-step planning-step">
-                <span>02 &middot; Then plan</span>
-                <h3>Plan from understanding</h3>
-                <p>Use that state to select robot skills, act, and replan from feedback</p>
-              </div>
+        <div class="research-signature">
+          <div class="research-flow" role="img" aria-label="Observe, then understand, then plan, then act. Grounded understanding is the foundation for intelligent planning.">
+            <div class="flow-step">
+              <span>01</span>
+              <strong>Observe</strong>
+              <small>ultrasound &middot; robot state &middot; clinical context</small>
             </div>
-            <p class="brain-principle">Good planning begins with genuine understanding.</p>
+            <span class="flow-arrow" aria-hidden="true">&rarr;</span>
+            <div class="flow-step key-step">
+              <span>02 &middot; the foundation</span>
+              <strong>Understand</strong>
+              <small>build a grounded multimodal state</small>
+            </div>
+            <span class="flow-arrow" aria-hidden="true">&rarr;</span>
+            <div class="flow-step">
+              <span>03</span>
+              <strong>Plan</strong>
+              <small>select &middot; act &middot; replan</small>
+            </div>
+            <span class="flow-arrow" aria-hidden="true">&rarr;</span>
+            <div class="flow-step">
+              <span>04</span>
+              <strong>Act</strong>
+              <small>scan &middot; intervene &middot; adapt</small>
+            </div>
           </div>
 
-          <span class="map-arrow" aria-hidden="true">&rarr;</span>
+          <p class="research-mantra">Understanding is not one more capability. It is what makes a plan intelligent.</p>
 
-          <div class="map-stage action-stage">
-            <p class="map-kicker">Robot skills</p>
-            <h3>Act</h3>
-            <ul>
-              <li>Scan and navigate</li>
-              <li>Guide and intervene</li>
-              <li>Monitor and adapt</li>
-            </ul>
-          </div>
-
-          <div class="avatar-bridge">
+          <div class="human-loop" aria-label="Clinicians and patients interact with an AI avatar that contains the MLLM brain and connects to robot execution.">
             <span class="human-node">Clinician &amp; patient</span>
-            <span class="bridge-arrow" aria-hidden="true">&harr;</span>
-            <strong>Interactive AI avatar</strong>
-            <span class="bridge-arrow" aria-hidden="true">&harr;</span>
+            <span class="loop-link" aria-hidden="true">&harr;</span>
+            <div class="avatar-system">
+              <span>Interactive AI avatar</span>
+              <strong>MLLM brain</strong>
+            </div>
+            <span class="loop-link" aria-hidden="true">&harr;</span>
             <span class="human-node">Robot execution</span>
           </div>
-        </div>
 
-        <div class="reliability-band">
-          <p class="capability-label">Cross-cutting foundation</p>
-          <h3>Grounding, reliability, and evaluation</h3>
-          <p>My earlier work on clinician-aligned evaluation informs a central question in this research: does the VLM genuinely understand what it observes, and can that understanding support effective planning in medical settings?</p>
-        </div>
-      </section>
-
-      <section class="section applications-section" id="applications" aria-labelledby="applications-title">
-        <div class="section-heading">
-          <p class="eyebrow">Medical ultrasound</p>
-          <h2 id="applications-title">One intelligence layer, two settings</h2>
-          <p class="section-intro">Ultrasound makes understanding and planning inseparable: what the robot sees depends on how it moves, and every new observation can change the next action.</p>
-        </div>
-        <div class="applications-grid">
-          <article class="application-card">
-            <div class="application-topline">
-              <span>01</span>
-              <p>Scanning</p>
+          <div class="research-foot" id="applications">
+            <div class="application-tags" aria-label="Medical ultrasound application settings">
+              <span>Medical ultrasound</span>
+              <strong>Robotic scanning</strong>
+              <strong>Intervention &amp; surgery</strong>
             </div>
-            <h3>Robotic ultrasound scanning</h3>
-            <p>VLMs can connect live ultrasound observations with probe state and scanning goals, allowing a robotic system to adapt its actions as visual evidence changes.</p>
-            <div class="application-path" aria-label="Scanning research flow">
-              <span>observe</span><i aria-hidden="true"></i><span>understand</span><i aria-hidden="true"></i><span>adapt</span>
-            </div>
-          </article>
-          <article class="application-card surgery-card">
-            <div class="application-topline">
-              <span>02</span>
-              <p>Surgery</p>
-            </div>
-            <h3>Ultrasound-guided intervention and surgery</h3>
-            <p>In dynamic surgical settings, VLMs can combine imaging, context, and robot capabilities to support spatial reasoning, planning, and human coordination.</p>
-            <div class="application-path" aria-label="Surgical research flow">
-              <span>perceive</span><i aria-hidden="true"></i><span>plan</span><i aria-hidden="true"></i><span>coordinate</span>
-            </div>
-          </article>
+            <p>Grounding &middot; reliability &middot; clinical evaluation</p>
+          </div>
         </div>
       </section>
 
@@ -184,7 +141,7 @@
           <li>
             <time datetime="2026-07">2026</time>
             <span class="tag">PhD</span>
-            <p>Joined the <a href="https://www.cs.cit.tum.de/camp/research/robust-robotics-and-ultrasound/">RobUSt team</a> at CAMP, TUM, to work on intelligent VLMs for medical robotics.</p>
+            <p>Joined <a href="https://www.cs.cit.tum.de/camp/start/">CAMP</a> at TUM to work on intelligent MLLMs for medical robotics.</p>
           </li>
           <li>
             <time datetime="2026">2026</time>
@@ -208,7 +165,7 @@
         <div class="section-heading">
           <p class="eyebrow">Selected work</p>
           <h2 id="publications-title">Research foundations and projects</h2>
-          <p class="section-intro">My work on clinical alignment, model attention, medical representations, and planning shapes how I approach reliable VLM understanding and action today.</p>
+          <p class="section-intro">My work on clinical alignment, model attention, medical representations, and planning shapes how I approach reliable MLLM understanding and action today.</p>
         </div>
 
         <div class="publication-list">
